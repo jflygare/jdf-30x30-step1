@@ -136,7 +136,7 @@ then
   git commit --allow-empty-message --no-edit
   git push
 
-  npx vercel@${vercel_ver} deploy --yes --prod --skip-domain
+  npx vercel@${vercel_ver} deploy --yes --prod
   # open in browser
   npx vercel@${vercel_ver} project ls 2>&1 | grep "${proj_name}" | awk '{print $2}' | xargs open
 fi
