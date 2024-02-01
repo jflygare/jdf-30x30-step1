@@ -1,0 +1,28 @@
+.students-container {
+    margin: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+
+    .students-list {
+        width: 500px;
+
+        mat-list-item:hover {
+            cursor: pointer;
+            background: var(--mat-app-background-color);
+        }
+
+        mat-list-item {
+            border-bottom: 1px solid #efefef;
+            display: flex;
+            flex-direction: row;
+            span {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .students-details {
+        width: 500px;
+    }
+}
